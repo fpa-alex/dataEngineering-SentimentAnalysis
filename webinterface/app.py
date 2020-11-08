@@ -4,10 +4,10 @@ import pickle
 app = Flask(__name__)
 
 
-with open('../model-learning/vectorizer.pkl', 'rb') as f:
+with open('vectorizer.pkl', 'rb') as f:
 	vectorizer = pickle.load(f)
 
-with open('../model-learning/sentiment_classifier.pkl','rb') as f:
+with open('sentiment_classifier.pkl','rb') as f:
 	sentiment_classifier = pickle.load(f)
 	
 
@@ -29,6 +29,6 @@ def index():
     else :
         return render_template('index.html')
 
-if __name__ == 'main':
+if __name__ == '__main__':
     app.run(host='0.0.0.0')
 
