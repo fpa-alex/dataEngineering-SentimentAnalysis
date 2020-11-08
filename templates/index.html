@@ -12,7 +12,11 @@
         </form>
 
         <h2>Sentiment :</h2>
+        {% if result %}
+        <h1 id="response"> {{ result }} </h1>
+        {% else %}
         <h1 id="response">Positive / Negative / Neutral</h1>
-
+        {% endif %}
+        
     </body>
 </html>
