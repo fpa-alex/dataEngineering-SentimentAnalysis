@@ -7,3 +7,7 @@ To run our docker program execute :
 
 You can access the app throught your web browser with :
 127.0.0.1:5000 or 0.0.0.0:5000
+
+To run the tests execute :
+
+python test_app.py
