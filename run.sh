@@ -1,10 +1,4 @@
-$NewTab = $psISE.PowerShellTabs.Add()
-$NewTab.DisplayName = "NewTab"
-sleep -m 160
-$NewTab.Invoke({cd C:\ ; cls})
-
-$outcome = powershell Invoke-Expression "docker run -p 5000:5000 webinterface"
-$outcome
+gnome-terminal --tab --bash -c "docker run -p 5000:5000 webinterface"
 
 while true
 do
