@@ -10,4 +10,6 @@ You can access the app throught your web browser with :
 
 To run the tests execute :
 
-python test_app.py
+>python test_app.py
+>python test_app_automated.py (after launching docker image)
+>pytest test_app1.py
