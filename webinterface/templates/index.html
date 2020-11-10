@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Machine leraning - Sentiment Analysis</title>
+    </head>
+    <body>
+
+        <form method="POST" action="">
+            <label for="phrase">Your phrase :</label><br>
+            <input type="text" name="phrase" id="phrase"><br>
+            <input type="submit" value="submit">
+        </form>
+
+        <h2>Sentiment :</h2>
+        {% if result %}
+        <h1 id="response"> {{ result }} </h1>
+        {% else %}
+        <h1 id="response">Positive / Negative / Neutral</h1>
+        {% endif %}
+        
+    </body>
+</html>
